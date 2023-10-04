@@ -1,0 +1,138 @@
+<body>
+    <header>
+        <title>Ejercicio Formulario</title>
+    </header>
+    <main>
+        <section>
+            <hr>
+            <p>Datos personales.</p>
+            <br>
+        </section>
+        <section>
+            <TABLE style="text-align: center;">
+                <TR>
+                    <TD><label for="usuario">Apellidos: </label> <br><input type="text" name="usuario"
+                        id="usuario" required></TD> <TD><label for="usuario">Nombre: </label><br><input type="text" name="usuario"
+                            id="usuario" required></TD> <TD><label for="usuario">DNI: </label><br><input type="text" name="usuario"
+                                id="usuario" required></TD>
+                                
+                    
+                </TR>
+                <tr>
+                <td><label for="usuario">Nacido/a en: </label><br><input type="text" name="usuario"
+                    id="usuario" required></td>
+                <td>
+                    
+                    <form>
+
+                        Provincia: <br><select>
+                        <option>Valencia</option>
+                        <option>Madrid</option>
+                        <option>Barcelona</option>
+                        <option>Cáceres</option>
+                        <option>Badajoz</option>
+                        </select>
+                        
+                        </form>
+                </td>
+                <td>
+                    <label for="fechayhora">Fecha nacimiento (dd/mm/aaaa): </label>
+<input id="fechayhora" name="fechayhora" type="datetime">
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="usuario">Domicilio (Calle, plaza y número): </label> <br><input type="text" name="usuario"
+                        id="usuario" required>
+                    </td>
+                    <td>
+                        <label for="usuario">Código Postal: </label> <br><input type="text" name="usuario"
+                        id="usuario" required> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="usuario">Localidad: </label> <br><input type="text" name="usuario"
+                        id="usuario" required>
+                    </td>
+                    <td>
+                        <form>
+
+                            Provincia: <br><select>
+                            <option>Valencia</option>
+                            <option>Madrid</option>
+                            <option>Barcelona</option>
+                            <option>Cáceres</option>
+                            <option>Badajoz</option>
+                            </select>
+                            
+                            </form>
+                    </td>
+                    <td>
+                        <label for="tele">Teléfono:</label><br>
+                        <input id="tele" name="tele" type="number">
+                    </td>
+                </tr>
+            </TABLE>
+            <section>
+                <hr>
+                <p>Solicitud</p>
+                <br>
+                <p>El/la que suscribe desea ser admitido en este centro para cursar el ciclo formativo de grado <br> superior:</p>
+                <form action="gestiona.php" method="get">
+                    <label for="dia">Ciclo formativo:</label>
+                    <input list="dias" name="dia" id="dia">
+                    <datalist id="dias">
+                    <option value="Ciclo1">
+                    <option value="Ciclo2">
+                    <option value="Ciclo3">
+                    <option value="Ciclo4">
+                    <option value="Ciclo5">
+                    <option value="Ciclo6">
+                    <option value="Ciclo7">
+                    </datalist>
+                    </form>
+                    <br>
+                    <p>En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los siguientes:</p>
+                    <br>
+                    <TABLE>
+                        <TR>
+                            <TD style="text-align: center;"><label for="usuario"><b>Ciclos formativos:</b> </label> <br><input type="text" name="usuario"
+                                id="usuario" required></TD> <TD style="text-align: center;"><label for="usuario"><b>Centros:</b> </label> <br><input type="text" name="usuario"
+                                    id="usuario" required></TD> <TD><label for="usuario"><b>Localidad:</b> </label> <br><input type="text" name="usuario"
+                                        id="usuario" required></TD>
+                        </TR>
+                        <TR>
+                            <TD><input type="text" name="usuario"
+                                id="usuario" required></TD> <TD><input type="text" name="usuario"
+                                    id="usuario" required></TD> <TD><input type="text" name="usuario"
+                                        id="usuario" required></TD>
+                        </TR>
+                    </TABLE>
+                    <br>
+                    Modalidad de horario especial (marque): <input type="radio"/>  <br/><br/>
+
+                    <hr>
+                    <p>Documentación presentada</p>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio"/>Fotocopia DNI  
+                            </td>
+                            <td>
+                                <input type="radio"/>Certificado académico
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio"/>Otros documentos (especifique): <input type="text" name="usuario"
+                                id="usuario" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr>
+                    <div style="text-align: center;">
+                    <input type="submit" value="Enviar">
+                    </div>
+            </section>
+</body>

@@ -1,0 +1,99 @@
+<body background="./pink-5.jpg">
+    <header>
+        <title>Acceda a nuestros servicios.</title>
+    </header>
+    <main style="text-align: center;">
+        <section>
+            <h1>Bienvenidos a nuestra web.</h1>
+        </section>
+        <section>
+        <label for="rango">Criterios</label>
+<input type="range" min="0" max="20" step="4" name="rango" id="rango">
+        </section>
+        <section>
+            <label for="rango">Criterios</label>
+    <input type="range" min="0" max="20" step="2" name="rango" id="rango">
+    <input type="number" id="numero" name="numero">
+    <script>
+    const rango = document.getElementById("rango")
+    const numero = document.getElementById("numero")
+    rango.onchange = function(){
+    numero.value = rango.value;
+    }
+    </script>
+        </section>
+        <section>
+            <label for="fecha">Fecha: </label>
+<input id="fecha" name="fecha" type="date">
+<br><br>
+<label for="fechayhora">Fecha y hora: </label>
+<input id="fechayhora" name="fechayhora" type="datetime">
+<br><br>
+<label for="fechayhoralocal">Fecha y hora local: </label>
+    <input id="fechayhoralocal" name="fechayhoralocal"
+    type="datetime-local">
+    <br><br>
+    <label for="hora">Hora: </label>
+    <input id="hora" name="hora" type="time">
+    <br><br>
+    <label for="mes">Mes: </label>
+    <input id="mes" name="mes" type="month">
+        </section>
+        <label for="correo">Correo electrónico</label>
+        <input id="correo" name="correo" type="email"><br>
+        <label for="web"></label>Sitio web</label>
+        <input id="web" name="webs" type="url"><br>
+        <label for="tele">Teléfono</label>
+        <input id="tele" name="tele" type="number">
+
+        <label for="cp">Código postal:</label>
+<input type="text" id="cp" name="cp" pattern="/^(?:0[1-
+9]|[1-4]\d|5[0-2])\d{3}$/" title="Debes incluir una
+Código postal correcto" placeholder="Incluye los 5
+número">
+    </main>
+    <footer style="text-align: center;">
+        <label for="colorfd">Elegir color de fondo</label>
+<input id="colorfd" name="colorfd" type="color">
+
+<form action="gestiona.php" method="get">
+    <label for="dia">Elige tu día de la semana:</label>
+    <input list="dias" name="dia" id="dia">
+    <datalist id="dias">
+    <option value="Lunes">
+    <option value="Martes">
+    <option value="Miércoles">
+    <option value="Jueves">
+    <option value="Viernes">
+    <option value="Sábado">
+    <option value="Domingo">
+    </datalist>
+    <input type="submit">
+    </form>
+
+    <form action="gestiona_datos.php">
+        <label for="dni">Country code:</label>
+        <input type="text" id="dni" name="dni" pattern="(([X-Z]{1})([-]?)(\d{7})([-
+        ]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Debes incluir un DNI correcto
+        con 9 números y la letra en mayúscula"><br><br>
+        <input type="submit">
+        </form>
+
+        <label>Datos: </label>
+<input type="text" id="nombre" name="nombre" placeholder="Introduzca sus datos“
+>
+<input type="text" id="nombre" name="nombre" placeholder="Tus apellidos aquí">
+
+<form action="cambia.php" method="post" name="login">
+    <label for="usuario">Perfil: </label> <input type="text" name="usuario"
+    id="usuario" required><br>
+    <label for="clave">Contraseña: </label><input type="password" name="clave"
+    id="clave" required><br>
+    <input type="submit" value="Enviar">
+    </form>
+
+    <form action="gestiona_datos.php" method="get" autocomplete="off">
+        <label>Tu nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Introduzca sus datos aquí." autocomplete="off">
+    </footer>
+</body>
